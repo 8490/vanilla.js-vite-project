@@ -1,4 +1,4 @@
-import "./style.css";
+import "./style.scss";
 import { getUsers } from "./src/getUsers";
 
 const app = document.querySelector("#app");
