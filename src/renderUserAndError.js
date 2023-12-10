@@ -5,7 +5,7 @@ export const show = (users) => {
   users.forEach((user) => {
     userSection.innerHTML += `
           <h1>${user.login}</h1>
-          <img src="${user.avatar_url}" width="200px" alt="" />
+          <img src="${user.avatar_url}" alt="" />
           <p><a href="${user.html_url}" target="_blank">URL</a></p> 
       `;
   });

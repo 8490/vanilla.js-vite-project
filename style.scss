@@ -3,5 +3,9 @@ body {
   text-align: center;
   section#users {
     background-color: #bebe;
+    img {
+      width: 150px;
+      border-radius: 10px;
+    }
   }
 }
