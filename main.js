@@ -4,8 +4,8 @@ const app = document.querySelector("#app");
 
 app.innerHTML = ` <section id="users"></section>`;
 
-const getUser = () => {
-  fetch("https://api.github.com/user")
+const getUsers = () => {
+  fetch("https://api.github.com/users")
     .then((res) => {
       if (!res.ok) {
         //? Fetch api'da hatayi bizim yakalamiz gerekiyor.
@@ -40,3 +40,7 @@ const showError = (err) => {
   <img src="./img/404.png" alt="" />
   `;
 };
+
+window.addEventListener("Load", () => {
+  getUsers();
+});
